@@ -14,19 +14,20 @@ dotenv.config();
 
 const app  = express();
 app.use(cors({
-    origin:"*",
+    origin:process.env.origin,
     credentials:true
 }))
 app.use(cookieParser())
 app.use(express.json())
 
-app.use("/",(req,res)=>{
-    res.send("API Working");
-})
+
 app.use('/auth',userRouter);
 app.use('/contacts',contactRouter)
 app.use('/messages',messageRouter)
 app.use('/channels',channelRouter)
+app.use('/',(req,res)=>{
+    res.send("Api working")
+})
 
 const server = app.listen(process.env.PORT,async ()=>{
     await mongoose.connect(process.env.DB_URL).then(()=>{
