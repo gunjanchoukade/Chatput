@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react'
 import { SendHorizonal ,LinkIcon,Sticker, ChartColumnStacked} from 'lucide-react'
 import EmojiPicker from 'emoji-picker-react'
 import useUserStore from '../../../store/userStore';
-import { socketDataContext } from '../../context/socketContext';
+import { socketDataContext } from '../../context/SocketContext';
 import axios from 'axios';
 const ContainerFooter = () => {
   const [showEmoji, setShowEmoji] = useState(false);
