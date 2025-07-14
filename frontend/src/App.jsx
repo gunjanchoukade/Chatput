@@ -4,7 +4,7 @@ import Auth from './pages/auth/Auth'
 
 import Chat from './pages/chat/Chat'
 import useUserStore from '../store/userStore'
-import Profile from './pages/profile/profile'
+import Profile from './pages/profile/Profile'
 import axios from 'axios'
 
 const App = () => {
