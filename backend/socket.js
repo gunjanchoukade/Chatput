@@ -22,7 +22,7 @@ const socketSetup = (server)=>{
         }
     }
     io.on("connection",(socket)=>{
-        const {userId} = socket.handshake.query;
+        const {userId} = socket.handshake.auth;
 
         if(userId){
             userSocketMap.set(userId,socket.id);

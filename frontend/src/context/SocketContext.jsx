@@ -14,10 +14,11 @@ const SocketContext = ({children}) => {
     
     
     useEffect(()=>{
+        console.log(authUser)
         if(authUser){
             socket.current = io(backendURL,{
                 withCredentials:true,
-                query:{
+                auth:{
                     userId:authUser._id
                 }
             });
