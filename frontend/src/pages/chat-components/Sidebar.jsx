@@ -58,9 +58,9 @@ const Sidebar = () => {
             <div>
                 {
                     authUser.profilePic  ? 
-                    <div className='flex'>
+                    <div className='flex gap-2'>
                         <div className={`w-10 h-10 rounded-full ${getColor(authUser.color)} flex justify-center items-center text-2xl rounded-full `}>
-                            <img src={authUser.profilePic}  /> 
+                            <img src={authUser.profilePic}  className='w-10 rounded-full h-10 object-cover'/> 
                         </div>
                         <p className='text-lg uppercase font-semibold mt-1 text-white'>{authUser.firstName} {authUser.lastName}</p>
                     </div>

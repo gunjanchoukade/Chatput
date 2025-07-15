@@ -72,7 +72,6 @@ const ContainerBody = () => {
   // scroll to last message
   useEffect(() => {
     requestAnimationFrame(() => {
-      console.log(selectedUser)
       scrollRef.current?.scrollIntoView({ behavior: "auto" });
     });
   }, [chatMessages]);

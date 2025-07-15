@@ -82,7 +82,7 @@ const Auth = () => {
     
   return (
     <div className='h-[100vh] w-[100vw] flex justify-center items-center bg-gray-100'>
-        <div className='lg:h-[70vh] md:h-[60vh] h-[50vh] w-[80vh] flex flex-col justify-between  shadow-2xl border-2 border-white bg-white rounded-xl px-2 mx-3'>
+        <div className='lg:h-[70vh] md:h-[60vh] h-[70vh] w-[80vh] flex flex-col justify-between  shadow-2xl border-2 border-white bg-white rounded-xl px-2 mx-3'>
             <div className='flex flex-col gap-4 '>
                 <div className='text-center rounded-t-xl mt-10'>
                     <h1 className='text-3xl font-semibold text-yellow-600 animate-bounce'>Welcome!</h1>

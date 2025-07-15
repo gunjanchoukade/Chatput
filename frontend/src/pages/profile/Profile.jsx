@@ -106,7 +106,7 @@ const Profile = () => {
   return (
     // "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541"
     // bg-[#1b1c24]
-    <div className=" bg-[#1b1c24] h-screen w-full flex  justify-center items-center">
+    <div className=" bg-[#1b1c24] h-screen w-full flex  justify-center items-center px-5">
 
       <div className="md:w-[40vw] w-full flex flex-col gap-6">
         <img onClick={backButton} className="bg-white rounded-full cursor-pointer ml-5" width="24" height="24" src="https://img.icons8.com/material-outlined/24/left.png" alt="left"/>
@@ -116,7 +116,7 @@ const Profile = () => {
           {
             profilePic !==null ? 
             <div className="relative w-30 h-30 md:w-40 md:h-40 rounded-full bg-contain flex justify-center items-center">
-              <img  className="w-30 h-30 md:w-40 md:h-40 rounded-full object-contain "
+              <img  className="w-30 h-30 md:w-40 md:h-40 rounded-full object-cover "
               src={authUser.profilePic || "https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png?20150327203541"} alt="profile image" /> 
 
               <img  onClick={deleteProfile}
