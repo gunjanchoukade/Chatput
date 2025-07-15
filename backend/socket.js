@@ -5,7 +5,7 @@ import channelModel from "./Models/channelModel.js";
 const socketSetup = (server)=>{
     const io = new Server(server,{
         cors:{
-            origin:[process.env.origin,"https://chatput-frontend.onreder.com"],
+            origin:[process.env.origin,"https://chatput-frontend.onrender.com"],
             credentials:true
         }
     });
